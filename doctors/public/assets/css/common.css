@@ -1,0 +1,241 @@
+:root {
+    --primary: rgb(2, 156, 158);
+    --bg-primary: rgba(2, 156, 158, 0.25);
+    --blue: rgb(20, 30, 75);
+    --grey: rgb(92, 92, 92);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--blue);
+}
+
+h1 {
+    font-size: 40px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    height: 5px;
+    width: 55px;
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 22px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 2px 4px;
+    margin: 5px 0;
+}
+
+p {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--grey);
+    transition: color 0.2s ease-in;
+    padding: 0 10px;
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+.text-muted {
+    color: var(--grey);
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.py-1 {
+    padding: 5px 0;
+}
+
+.my-1 {
+    margin: 10px 0;
+}
+
+.my-2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.col-6 {
+    width: calc(50% - 15px);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.loginForm {
+    min-height: 100vh;
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px 6px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    border: 1px solid var(--grey);
+}
+
+input:focus {
+    border: 1px solid var(--primary);
+}
+
+label {
+    color: var(--grey);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: var(--primary);
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+i {
+    color: var(--primary);
+}
+
+/* header css */
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.923);
+    z-index: 999;
+}
+
+nav {
+    margin: 5px 0;
+    padding: 5px 0;
+    box-shadow: -2px 0 10px 0 var(--bg-primary);
+    background-color: var(--bg-primary);
+}
+
+.logo-img {
+    height: 50px;
+    width: 100px;
+}
+
+/* card css */
+.card {
+    padding: 10px 5px;
+    cursor: pointer;
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+    box-shadow: 0 0 1px 2px var(--bg-primary);
+}
+
+.card-img {
+    width: 30%;
+    text-align: left;
+    margin-left: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    transition: transform 0.2s ease-in;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    width: 70%;
+    margin-right: 5px;
+    text-align: justify;
+}
+
+/* footer css */
+footer {
+    background-color: var(--bg-primary);
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width:768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+}
