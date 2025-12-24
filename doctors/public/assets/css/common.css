@@ -127,7 +127,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 -8px 1px black;
+    box-shadow: 0 -8px 1px #000000;
 }
 
 input {
