@@ -40,13 +40,13 @@ Each folder represents a **separate React project**.
 - React Components & JSX
 - Props and State Management
 - Controlled & Uncontrolled Components
-- React Hooks (`useState`, `useEffect`)
+- React Hooks 
 - Form Handling & Validation
 - CRUD Operations
 - Conditional Rendering
 - Component Reusability
+- Redux Toolkit
 - Basic Performance Optimization
-- Version Control with Git
 
 ---
 
