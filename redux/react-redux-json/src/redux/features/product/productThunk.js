@@ -1,7 +1,7 @@
 import axios from "axios";
 import { setProducts } from "./productSlice";
 
-const JSON_URL = "http://localhost:5000/products";
+const JSON_URL = "https://696bb5a2624d7ddccaa1db97.mockapi.io/products";
 
 export const loadProducts = () => async (dispatch) => {
     // Check JSON Server first
