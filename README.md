@@ -50,6 +50,13 @@ Each folder represents a **separate React project**.
 
 ---
 
+# 🌐 View Demos
+
+1. [Doctors](https://doctors-drab.vercel.app/doctors)
+2. [Cart API](https://redux-json-api.vercel.app/)
+
+---
+
 ## ▶️ Getting Started
 
 ### Clone the Repository
